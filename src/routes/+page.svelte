@@ -48,12 +48,12 @@
 
   <Faq {...site.faq} />
 
-<Footer
-  personName={site.personName}
-  locationLine={site.hero.locationLine}
-  instagramHandle={site.instagramHandle}
-  whatsappDigits={site.hero.whatsappDigits}
-  whatsappPrefill={site.hero.whatsappPrefill}
-/>
+  <Footer
+    personName={site.personName}
+    locationLine={site.hero.locationLine}
+    instagramHandle={site.instagramHandle}
+    whatsappDigits={site.hero.whatsappDigits}
+    whatsappPrefill={site.hero.whatsappPrefill}
+  />
 </main>
 
