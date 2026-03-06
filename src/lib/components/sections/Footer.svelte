@@ -15,7 +15,7 @@
   const instaHandle = $derived(instagramHandle.replace('@',''))
 </script>
 
-<footer class="mx-auto my-6 w-full max-w-[28rem] px-5">
+<footer class="mx-auto my-6 w-full max-w-[32rem] px-5">
   <div
     class="rounded-[1rem] border border-white/10 bg-black/25 p-6 text-center
            backdrop-blur-md shadow-sm supports-[backdrop-filter]:bg-black/20"

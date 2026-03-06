@@ -2,7 +2,7 @@
   export let items: string[]
 </script>
 
-<section class="mx-auto w-full max-w-[28rem] px-5 mb-6">
+<section class="mx-auto w-full max-w-[32rem] px-5 mb-6">
   <div
     class="rounded-[1rem] border border-white/10
            bg-black/20 p-6 backdrop-blur-md"

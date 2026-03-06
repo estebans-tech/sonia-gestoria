@@ -14,7 +14,7 @@
   const wa = $derived(whatsappUrl(whatsappDigits, whatsappPrefill))
 </script>
 <section class="pt-14 pb-14">
-  <div class="mx-auto w-full max-w-[28rem] px-5">
+  <div class="mx-auto w-full max-w-[32rem] px-5">
     <header class="text-center">
       <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight text-white">{title}</h1>
       <p class="mt-3 text-base text-white/80">{subtitle}</p>

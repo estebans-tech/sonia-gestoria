@@ -34,3 +34,11 @@ export type FaqSectionProps = {
   items: FaqItem[];
 }
 
+export type FooterSectionProps = {
+  personName?: string
+  locationLine?: string
+  instagramHandle?: string
+  whatsappDigits?: string
+  whatsappPrefill?: string
+}
+

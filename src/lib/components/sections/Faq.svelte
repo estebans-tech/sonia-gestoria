@@ -4,7 +4,7 @@
   let { title = 'Preguntas frecuentes', items }: FaqSectionProps = $props();
 </script>
 
-<section class="mx-auto w-full max-w-[28rem] px-5">
+<section class="mx-auto w-full max-w-[32rem] px-5">
   <div class="rounded-[1rem] border border-white/10 bg-black/25 p-6 backdrop-blur-md shadow-sm supports-[backdrop-filter]:bg-black/20">
     <h2 class="text-sm font-semibold uppercase tracking-wide text-white/75">{title}</h2>
 
