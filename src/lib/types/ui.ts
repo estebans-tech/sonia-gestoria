@@ -5,3 +5,9 @@ export type ChecklistCardProps = {
   class?: string;
 }
 
+export type PrimaryCtaProps = {
+  href: string
+  label?: string
+  class?: string
+}
+

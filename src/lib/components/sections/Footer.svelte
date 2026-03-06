@@ -1,4 +1,5 @@
 <script lang="ts">
+  import PrimaryCta from '$lib/components/ui/PrimaryCta.svelte'
   import type { FooterSectionProps } from '$lib/types/site'
   import { whatsappUrl } from '$lib/utils/links'
 
@@ -11,15 +12,16 @@
   }: FooterSectionProps = $props()
 
   const wa = $derived(whatsappUrl(whatsappDigits, whatsappPrefill))
+  const instaHandle = $derived(instagramHandle.replace('@',''))
 </script>
 
-<footer class="mx-auto mt-4 w-full max-w-[28rem] px-5 pb-10">
+<footer class="mx-auto my-6 w-full max-w-[28rem] px-5">
   <div
     class="rounded-[1rem] border border-white/10 bg-black/25 p-6 text-center
            backdrop-blur-md shadow-sm supports-[backdrop-filter]:bg-black/20"
   >
     {#if personName}
-      <div class="text-lg font-semibold text-white/90">
+      <div class="text-2xl font-semibold text-white/90">
         {personName}
       </div>
     {/if}
@@ -30,31 +32,26 @@
       </div>
     {/if}
 
-    <div class="mt-5 flex items-center justify-center gap-6 text-sm">
-      {#if wa}
-        <a
-          href={wa}
-          target="_blank"
-          rel="noopener"
-          class="text-rose-100/90 hover:text-white transition"
-        >
-          WhatsApp
-        </a>
-      {/if}
+    <p class="mt-5 text-sm text-white/70">
+      ¿Tenés dudas? Escribime y te respondo rápido.
+    </p>
 
-      {#if instagramHandle}
-        <a
-          href={`https://instagram.com/${instagramHandle.replace('@','')}`}
-          target="_blank"
-          rel="noopener"
-          class="text-rose-100/90 hover:text-white transition"
-        >
-          Instagram
-        </a>
-      {/if}
-    </div>
+    {#if wa}
+      <PrimaryCta href={wa} label="Consultar por WhatsApp" class="my-6" />
+    {/if}
 
-    <div class="mt-6 text-xs text-white/40">
+    {#if instagramHandle}
+      <a
+        href={`https://instagram.com/${instaHandle}`}
+        target="_blank"
+        rel="noopener"
+        class="mt-6 inline-block text-sm text-white/40 hover:text-white transition"
+      >
+      {instagramHandle}
+      </a>
+    {/if}
+
+    <div class="mt-1 text-xs text-white/40">
       © {new Date().getFullYear()}
     </div>
   </div>
