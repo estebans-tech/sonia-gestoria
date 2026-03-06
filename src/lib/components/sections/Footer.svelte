@@ -16,9 +16,9 @@
       : null
 </script>
 
-<footer class="mx-auto w-full max-w-[28rem] px-5 pb-10">
+<footer class="mx-auto mt-4 w-full max-w-[28rem] px-5 pb-10">
   <div
-    class="rounded-[2rem] border border-white/10 bg-black/25 p-6 text-center
+    class="rounded-[1rem] border border-white/10 bg-black/25 p-6 text-center
            backdrop-blur-md shadow-sm supports-[backdrop-filter]:bg-black/20"
   >
     {#if personName}

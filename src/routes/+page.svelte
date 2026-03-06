@@ -1,7 +1,9 @@
 <script lang="ts">
   import Hero from '$lib/components/sections/Hero.svelte'
   import ChecklistCard from '$lib/components/ui/ChecklistCard.svelte'
+  import ServicesCard from '$lib/components/sections/ServicesCard.svelte';
   import ProcessSteps from '$lib/components/sections/ProcessSteps.svelte';
+  import ReassuranceCard from '$lib/components/sections/ReassuranceCard.svelte';
   import Faq from '$lib/components/sections/Faq.svelte';
   import Footer from '$lib/components/sections/Footer.svelte'
   import { site } from '$lib/content/site'
@@ -20,30 +22,20 @@
       decoding="async"
       loading="eager"
     />
-    <div class="absolute inset-0 bg-black/45"></div>
+    <div class="absolute inset-0 bg-black/15"></div>
     <div class="absolute inset-0 bg-gradient-to-b from-black/40 to-black/70"></div>
   </div>
 
   <Hero {...site.hero} />
   
   {#if site.services.length}
-    <section class="mx-auto w-full max-w-[28rem] px-5">
-      <ChecklistCard
-        title="TRÁMITES"
-        items={site.services}
-        class="mb-6"
-      />
-    </section>
-  {/if}
-<!-- 3: process -->
-<ProcessSteps {...site.process} />
+    <ServicesCard items={site.services} />
+ {/if}
+
+  <ProcessSteps {...site.process} />
+
   {#if site.reassurance.length}
-    <section class="mx-auto w-full max-w-[28rem] px-5">
-      <ChecklistCard
-        items={site.reassurance}
-        class="mb-6"
-      />
-    </section>
+    <ReassuranceCard items="{site.reassurance}" />
   {/if}
 
   <Faq {...site.faq} />
