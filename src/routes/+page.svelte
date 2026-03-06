@@ -1,4 +1,6 @@
 <script lang="ts">
+  import SeoHead from '$lib/components/seo/SeoHead.svelte'
+  import { homeSeo } from '$lib/content/seo'
   import Hero from '$lib/components/sections/Hero.svelte'
   import ChecklistCard from '$lib/components/ui/ChecklistCard.svelte'
   import ServicesCard from '$lib/components/sections/ServicesCard.svelte';
@@ -9,6 +11,8 @@
   import { site } from '$lib/content/site'
   import heroBg from '$lib/assets/hero.jpg?enhanced&w=2400;1600;1200;900;600;420&q=70'
 </script>
+
+<SeoHead {...homeSeo} />
 
 <main class="relative min-h-dvh">
   <div class="fixed inset-0 -z-10 bg-black">
