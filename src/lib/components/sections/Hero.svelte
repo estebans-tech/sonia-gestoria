@@ -15,7 +15,7 @@
 <section class="pt-14 pb-14">
   <div class="mx-auto w-full max-w-[28rem] px-5">
     <header class="text-center">
-      <h1 class="text-4xl font-extrabold tracking-tight text-white">{title}</h1>
+      <h1 class="text-6xl font-extrabold tracking-tight text-white">{title}</h1>
       <p class="mt-3 text-base text-white/80">{subtitle}</p>
 
       <div class="mt-6">
@@ -37,7 +37,7 @@
             class="pointer-events-none absolute inset-0 opacity-80 transition group-hover:opacity-100
                    bg-gradient-to-b from-white/20 via-white/8 to-transparent"
             aria-hidden="true"
-          />
+          ></span>
           <span class="pointer-events-none absolute inset-x-0 top-0 h-px bg-white/30" aria-hidden="true"></span>
           <span class="relative">Consultar por WhatsApp</span>
 
@@ -52,4 +52,5 @@
         {/if}
       </div>
     </header>
+  </div>
 </section>

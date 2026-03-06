@@ -10,10 +10,7 @@
     whatsappPrefill
   }: FooterSectionProps = $props()
 
-  const wa =
-    whatsappDigits
-      ? whatsappUrl(whatsappDigits, whatsappPrefill)
-      : null
+  const wa = $derived(whatsappUrl(whatsappDigits, whatsappPrefill))
 </script>
 
 <footer class="mx-auto mt-4 w-full max-w-[28rem] px-5 pb-10">
